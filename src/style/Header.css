@@ -1,0 +1,98 @@
+.header{
+    background-color: #2874f0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px 100px;
+}
+
+.header__first{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.header__first>img {
+    width: 75px;
+    object-fit: contain;
+}
+
+.header__first1{
+    font-size: 11px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.header__second{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 3px;
+    margin-left: -30px;
+    margin-right: -25px;
+}
+
+.header__second>input{
+        border:none;
+        outline: none;
+        font-size: 14px;
+        font-family: Roboto,Arial,sans-serif;
+        border-radius: 3px;
+        padding: 10px 15px;
+        width: 24vw;
+        height: 15px;
+}
+
+.header__second>.MuiSvgIcon-root{
+    color: #2874f0;
+    padding-right: 10px;
+}
+
+.header__third>button{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 9vw;
+    height: 30px;
+    color: #2874f0;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.header__fourth{
+    font-size: 14xpx;
+    font-weight: 600;
+    font-family: Roboto,Arial,sans-serif;
+    cursor: pointer;
+}
+
+.header__fifth{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header__fifth>span{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Roboto,Arial,sans-serif;
+}
+
+.header__fifth>.MuiSvgIcon-root{
+   width: 20px;
+}
+
+.header__six{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Roboto,Arial,sans-serif;
+
+}
