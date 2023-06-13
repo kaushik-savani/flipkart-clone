@@ -1,4 +1,4 @@
-.header{
+.nav-container{
     background-color: #2874f0;
     color: white;
     display: flex;
@@ -7,19 +7,19 @@
     padding: 10px 100px;
 }
 
-.header__first{
+.logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 40px;
 }
 
-.header__first>img {
+.logo>img {
     width: 75px;
     object-fit: contain;
 }
 
-.header__first1{
+.logo__1{
     font-size: 11px;
     font-style: italic;
     font-weight: 500;
@@ -27,7 +27,7 @@
     color: white;
 }
 
-.header__second{
+.search{
     display: flex;
     align-items: center;
     background-color: white;
@@ -36,23 +36,23 @@
     margin-right: -25px;
 }
 
-.header__second>input{
+.search-box>input{
         border:none;
         outline: none;
         font-size: 14px;
-        font-family: Roboto,Arial,sans-serif;
+        font-family: 'Roboto',Arial,sans-serif;
         border-radius: 3px;
         padding: 10px 15px;
         width: 24vw;
         height: 15px;
 }
 
-.header__second>.MuiSvgIcon-root{
+.search>.MuiSvgIcon-root{
     color: #2874f0;
     padding-right: 10px;
 }
 
-.header__third>button{
+.login> button{
     outline: none;
     border: none;
     cursor: pointer;
@@ -60,39 +60,40 @@
     height: 30px;
     color: #2874f0;
     font-size: 16px;
-    font-weight: 600;
-    font-family: Roboto,Arial,sans-serif;
+    font-weight: 500;
+    font-family: 'Roboto',Arial,sans-serif;
 }
 
-.header__fourth{
+.become-seller{
     font-size: 14xpx;
-    font-weight: 600;
-    font-family: Roboto,Arial,sans-serif;
+    font-weight: 500;
+    font-family: 'Roboto',Arial,sans-serif;
     cursor: pointer;
 }
 
-.header__fifth{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
 
-.header__fifth>span{
+.more>span{
     font-size: 16px;
-    font-weight: 600;
-    font-family: Roboto,Arial,sans-serif;
+    font-weight: 500;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    font-family: 'Roboto',Arial,sans-serif;
 }
 
-.header__fifth>.MuiSvgIcon-root{
+.more>.MuiSvgIcon-root{
    width: 20px;
 }
 
-.header__six{
+.cart{
     display: flex;
     align-items: center;
     cursor: pointer;
     font-size: 16px;
-    font-weight: 600;
-    font-family: Roboto,Arial,sans-serif;
-
+    font-weight: 500;
+    font-family: 'Roboto',Arial,sans-serif;
 }
+
+.cart .MuiSvgIcon-root{
+    margin-right: 2px;
+ }

@@ -3,14 +3,18 @@ import '../style/Header.css'
 import SearchIcon from '@mui/icons-material/Search';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-
+import Tippy from '@tippyjs/react';
+import LoginTooltip from './LoginTooltip';
+import 'tippy.js/dist/tippy.css';
+import MoreTooltip from './MoreTooltip';
+import 'tippy.js/themes/light.css';
 
 const Header = () => {
   return (
-    <div className="header">
-        <div className="header__first">
+    <div className="nav-container">
+        <div className="logo">
             <img src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" alt="Flipkart" />
-            <div className="header__first1">
+            <div className="logo__1">
                 <span>Explore</span>
                 <span style={{color:'#ffe500',fontWeight:'600'}}>{" Plus"}</span>
                 <span>
@@ -18,21 +22,37 @@ const Header = () => {
                 </span>
             </div>
         </div>
-        <div className="header__second">
-            <input type="text" placeholder='Search for products,brands ande more'/>
+        <div className="search">
+            <div className="search-box">
+                <input type="text" placeholder='Search for products,brands ande more'/>
+            </div>
             <SearchIcon/>
         </div>
-        <div className="header__third">
-            <button>Login</button>
+        <div className="login">
+            <Tippy 
+                content={<LoginTooltip/>}
+                interactive={true}
+                animation='scale'
+                theme='light'
+                offset={[0,13]}
+            >
+                <button>Login</button>
+            </Tippy>
         </div>
-        <div className="header__fourth">
+        <div className="become-seller">
             <span>Become a Seller</span>
         </div>
-        <div className="header__fifth">
-            <span>More</span>
-            <ExpandMoreIcon/>
+        <div className="more">
+            <Tippy 
+            content={<MoreTooltip/>} 
+            theme='light'
+            interactive={true}
+            animation='perspective' offset={[0,16]}
+            >
+                <span>More <ExpandMoreIcon/></span>
+            </Tippy>
         </div>
-        <div className="header__six">
+        <div className="cart">
             <ShoppingCartIcon/>
             <span>Cart</span>
         </div>
